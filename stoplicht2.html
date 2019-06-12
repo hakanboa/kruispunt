@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+    <h1>Stoplicht2.html</h1>
+    <p>Verwisselen van vier plaatjes met vier knoppen</p>
+    <img id="stoplicht" src="stoplichtuit.png">
+    <p>Klik op een knop om het stoplicht veranderen.</p>
+    <input type="button" value="rood" onclick="maakRood()">
+    <input type="button" value="geel" onclick="maakgeel()">
+    <input type="button" value="groen" onclick="maakgroen()">
+    <input type="button" value="uit" onclick="zetUit()">
+</form>
+<script>
+    var stoplicht = document.getElementById('stoplicht');
+    function maakRood() {
+        stoplicht.src = "stoplichtrood.png";
+    }
+    function maakgeel() {
+        stoplicht.src = "stoplichtgeel.png";
+    }
+    function maakgroen(){
+        stoplicht.src = "stoplichtgroen.png";
+    }
+    function zetUit(){
+       stoplicht.src = "stoplichtuit.png";
+    }
+</script>
+</body>
+</html>
